@@ -1,69 +1,125 @@
 {
-  "Los Suaves": [
-    {"titulo": "Sabes? ¡Phil Lynott, murió!", "id": "1dy6JnVsdLm8Gof1u-ir6GKbH9tqK2lbU"},
-    {"titulo": "Dolores se llamaba Lola", "id": "1IXfayC9enobN8rz0Yz0BrmNMgsLZhh0f"},
-    {"titulo": "Solo pienso en dormir", "id": "1tnAw9FWhcRgLQSz6qjigoEAtosiVm7Nj"},
-    {"titulo": "Nena, te voy a dejar", "id": "1rUNFS-53Z27aaYluQkqUQM0NORx9Z5vY"},
-    {"titulo": "No puedo dejar el Rock", "id": "10pWrQ7GdhJoShLWmDqEIiDQ20M28Tvpr"},
-    {"titulo": "Ese día piensa en mí", "id": "1t3IolVJUjBK1nztGTkukm0IogD1CNge3"},
-    {"titulo": "Buen suceso", "id": "1eeodigKVFVuGWhpi4YcdrHCy9jYm-UeQ"},
-    {"titulo": "Río y no sé por qué", "id": "1sAroHhbfUyn-2RInNm5rqm7pFNjZ8ed7"},
-    {"titulo": "Camino de una dirección", "id": "14nqMgpkYQVtq-p9ArByXT6cnzfH1eQVD"},
-    {"titulo": "Viajando al fin de la noche", "id": "1zuCY0gOoK56BTwxowzmRmCAHQrNgseVC"},
-    {"titulo": "Pardao", "id": "12IuISh-ZJkKR-B9rEX7gGwlejXHClAyO"},
-    {"titulo": "Parece que aún fue ayer", "id": "1rOsQFRsHzsNK09BOpHwq2Oj0APl_-WMm"},
-    {"titulo": "Maldita sea mi suerte", "id": "1zHe5GqvFI6hxnD09xtkY4zw-BzfJRydA"},
-    {"titulo": "Pobre Sara", "id": "1YwFf72nzyPnx8DOHxKErqMrSnw7Zc6Sd"},
-    {"titulo": "Tiempo perdido (Versión Acústica)", "id": "1ZleJZX8Pz_9KNOBXCpfcpWx2lP2ut0dm"},
-    {"titulo": "Dame Rock and Roll", "id": "1WDVnL-_aH-JWRddy3ZitrHtD58MpODUX"},
-    {"titulo": "Tiempo perdido", "id": "1TnjtbROfUmQJ4aUNWJk1r0a285vQAN8l"},
-    {"titulo": "Pensando en ti", "id": "1rUAWhpS7D9v51tt94fm9uPFdCsZTu54t"},
-    {"titulo": "Parece que aún fue ayer (Versión Acústica)", "id": "1mltX6v_C6JQ2QWgm1bKBl4hk7qv8VOxP"},
-    {"titulo": "El Afilador", "id": "1Bd2eV1c8MUcC1GCthLQ9ZEWV4QAXPHSQ"},
-    {"titulo": "Ahora Que Me Dejas", "id": "1ZT9qcFZK6QsRkPA18QbWa_dbY7iycLIY"},
-    {"titulo": "Hendrix", "id": "1kMTr01jMchp8p1lsUlQ8h_Z69HvVg2i6"},
-    {"titulo": "No Me Mires", "id": "1m5pHHZR6Qy1wBpA9YryaXSM6TLLlf_Jh"},
-    {"titulo": "Dulce Castigo", "id": "1WCZUw-jD-QrLPgTmHZ-UQP7Qqgq3eZlp"},
-    {"titulo": "Pobre Jugador!", "id": "1i_c0WZJOAAfgJALvnz3iGcIeLid_Z1JO"},
-    {"titulo": "Otra Noche, Otra Ciudad", "id": "1gVCyXzuTC4ss-SMv1IqUITWKnNexrnK6"},
-    {"titulo": "Si Pudiera", "id": "1ycaohbN4FT8uBqRCVePKNL7yAMyDyrdD"},
-    {"titulo": "Santa Compaña", "id": "1vR9oMCs2WMS6J1HClGVZ0BIkGO8REShM"},
-    {"titulo": "Víspera De Todos Los Santos", "id": "1ZhT7SIBCSqFEdsXEXkC_Q2uzS1I3Isid"},
-    {"titulo": "Harto De Ser Hombre", "id": "19YF4l-Mbb_qG3cgFVY1SUzAc-8aiNDV_"},
-    {"titulo": "Palabras Para Julia", "id": "1XKcA4aysui-I5dced3mwfMUHeyDmyIZh"},
-    {"titulo": "No Me Gusta El Rock And Roll", "id": "1sdnKLYNNixA-0h7tZ_mAjaT2_cpHM8K6"},
-    {"titulo": "Chou-Chou Llega El Tren", "id": "1s9W8P6EglihruDffh8RBlEQR0i-k8UMu"},
-    {"titulo": "Dulces Noches De Luna Y Pateras", "id": "1om1dSpfQMTE6Z14hjmxlpPJ8frNDePwy"},
-    {"titulo": "La Peor Canción Del Mundo", "id": "1Ioe4n2-A6_-jLhKlkNPgoM0cr8Ej4qRr"},
-    {"titulo": "Siempre Con Miedo", "id": "14DRwDuydlnop9KLcjUzXYKmGzGcaPpdp"},
-    {"titulo": "Miénteme", "id": "1OkJ4CHvZ5T3fV0q-aJ6JEjUBxYYrEaPJ"}
-  ],
-  "Rosendo": [
-    {"titulo": "Otra noche sin dormir", "id": "1aPLIW-VIS19xkgq2dHOjX_AhpoaLOtb_"},
-    {"titulo": "Agradecido", "id": "1HJvcr6mhf4WjCr6UX7Lo95K6NfJnBwJy"},
-    {"titulo": "Flojos de pantalón", "id": "1b7mxEpiLNU6gpk_PiGndYa6TFJj_4My4"},
-    {"titulo": "Loco por incordiar", "id": "17TdDmB-o6tjAGZLHYERmNV61oen-eEZa"},
-    {"titulo": "Masculino singular", "id": "16s09LeohkhQWRXz6rI1cOLpvYSFC0RGj"},
-    {"titulo": "Pan de Higo", "id": "1Cd9H9deYMqeLMwHKQXRtRAPYZOYVgqO_"}
-  ],
-  "Barricada": [
-    {"titulo": "Blanco y negro", "id": "1Y2S6eNWhWlCrcB-qPqvdsjGETuyH-6GM"},
-    {"titulo": "Animal caliente", "id": "1sasuH6Xu8V3dfQDMWUfcCpK4nx4XoA77"},
-    {"titulo": "Deja que esto no acabe nunca", "id": "1nH48Be5ELGHvNpFdiNKlpnH7l23JR5jb"},
-    {"titulo": "Esto es una noche de Rock and Roll", "id": "1AsbrOX594ubSPqSHUGiDzSElSfszvzKa"},
-    {"titulo": "No hay tregua", "id": "1AoVu0IrQqlCy8tVPN1DDKHgeIW1FBOzo"},
-    {"titulo": "Pétalos", "id": "13LVfLwroN8l9UTGLVjhKIEvZJ4q34xOh"},
-    {"titulo": "Sean bienvenidos", "id": "1lXAY5aOA0x08JoOObqZ0b5DdKWC5tWhL"},
-    {"titulo": "Todos mirando", "id": "1FFY31P1RBp-57O3hUBnWWt2FU27OG78Y"},
-    {"titulo": "Por instinto", "id": "1FKaa6svaN2DnPSQe7D5b6gH9fJqslzuJ"}
-  ],
-  "AC/DC": [
-    {"titulo": "You Shook Me All Night Long", "id": "1ObowHPvPO6-99H6A9pyY1wzKhcB2h7xh"},
-    {"titulo": "Back In Black", "id": "1dVK9LMxJN1cqR7a6fprwhP8dNtlXcLls"},
-    {"titulo": "Highway to Hell", "id": "10mpOeFj-nVQNqTvk05PmAGl2ghkPk7h_"},
-    {"titulo": "If You Want Blood (You've Got It)", "id": "1XMPlDBuZA_clWibYgta3VEiVEgvcBZpv"},
-    {"titulo": "T.N.T", "id": "1U48gDh_3VLZoE0w0cPCOkpyd5cRAoTH9"},
-    {"titulo": "Thunderstruck", "id": "1WhAJGcLr9PAI3FoE6CONsbvvJ2acoEYm"},
-    {"titulo": "Touch Too Much", "id": "1EoKc1hse-v-jWhAq3RRH084ijAPXrrgy"}
-  ]
+  "Los Suaves": {
+    "albums": [
+      {
+        "nombre": "Ese día piensa en mí",
+        "año": "1989",
+        "portada": "img/Ese_dia_piensa_en_mi.jpg",
+        "canciones": [
+          {"titulo": "Ese día piensa en mí", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 1 (320).mp3"},
+          {"titulo": "Buen suceso", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "Río y no sé por qué", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 3 (320).mp3"},
+          {"titulo": "Camino de una dirección", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 4 (320).mp3"},
+          {"titulo": "Solo pienso en dormir", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 5 (320).mp3"},
+          {"titulo": "Nena, te voy a dejar", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 6 (320).mp3"},
+          {"titulo": "No puedo dejar el Rock", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 7 (320).mp3"},
+          {"titulo": "Diez años de Rock (bonus)", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Diez A\u00f1os de Rock CD 1 TRACK 2 (320).mp3"}
+        ]
+      },
+      {
+        "nombre": "Maldita sea mi suerte",
+        "año": "1991",
+        "portada": "img/Maldita_sea_mi_suerte.jpg",
+        "canciones": [
+          {"titulo": "Maldita sea mi suerte", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 1 (320).mp3"},
+          {"titulo": "Pobre Sara", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "Viajando al fin de la noche", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 3 (320).mp3"},
+          {"titulo": "Pardao", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 4 (320).mp3"},
+          {"titulo": "Parece que aún fue ayer", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 5 (320).mp3"},
+          {"titulo": "Dame Rock and Roll", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 6 (320).mp3"},
+          {"titulo": "Pensando en ti", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 8 (320).mp3"},
+          {"titulo": "Tiempo perdido", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 9 (320).mp3"},
+          {"titulo": "Tiempo perdido (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 10 (320).mp3"},
+          {"titulo": "Parece que aún fue ayer (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 11 (320).mp3"}
+        ]
+      },
+      {
+        "nombre": "Santa Compaña",
+        "año": "1996",
+        "portada": "img/Santa_compania.jpg",
+        "canciones": [
+          {"titulo": "Sabes? ¡Phil Lynott, murió!", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 1 (320).mp3"},
+          {"titulo": "Dolores se llamaba Lola", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "El Afilador", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 3 (320).mp3"},
+          {"titulo": "Ahora Que Me Dejas", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 4 (320).mp3"},
+          {"titulo": "Hendrix", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 5 (320).mp3"},
+          {"titulo": "No Me Mires", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 6 (320).mp3"},
+          {"titulo": "Dulce Castigo", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 7 (320).mp3"},
+          {"titulo": "Pobre Jugador!", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 8 (320).mp3"},
+          {"titulo": "Otra Noche, Otra Ciudad", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 9 (320).mp3"}
+        ]
+      },
+      {
+        "nombre": "Víspera de Todos los Santos",
+        "año": "2000",
+        "portada": "img/los-suaves-vispera-de-todos-los-santos.jpg",
+        "canciones": [
+          {"titulo": "Víspera De Todos Los Santos", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 1 (320).mp3"},
+          {"titulo": "Harto De Ser Hombre", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "Palabras Para Julia", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 3 (320).mp3"},
+          {"titulo": "No Me Gusta El Rock And Roll", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 4 (320).mp3"},
+          {"titulo": "Chou-Chou Llega El Tren", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 5 (320).mp3"},
+          {"titulo": "Dulces Noches De Luna Y Pateras", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 6 (320).mp3"},
+          {"titulo": "La Peor Canción Del Mundo", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 7 (320).mp3"},
+          {"titulo": "Siempre Con Miedo", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 8 (320).mp3"},
+          {"titulo": "Miénteme", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 9 (320).mp3"}
+        ]
+      }
+    ]
+  },
+  "Rosendo": {
+    "albums": [
+      {
+        "nombre": "Colección",
+        "año": "",
+        "portada": null,
+        "canciones": [
+          {"titulo": "Otra noche sin dormir", "src": "ROSENDO/Otra noche sin dormir CD 1 TRACK 18 (320).mp3"},
+          {"titulo": "Agradecido", "src": "ROSENDO/Rosendo - Agradecido.mp3"},
+          {"titulo": "Flojos de pantalón", "src": "ROSENDO/Rosendo - Flojos de pantal\u00f3n.mp3"},
+          {"titulo": "Loco por incordiar", "src": "ROSENDO/Rosendo - Loco por Incordiar.mp3"},
+          {"titulo": "Masculino singular", "src": "ROSENDO/Rosendo - Masculino singular.mp3"},
+          {"titulo": "Pan de Higo", "src": "ROSENDO/Rosendo - Pan de Higo.mp3"}
+        ]
+      }
+    ]
+  },
+  "Barricada": {
+    "albums": [
+      {
+        "nombre": "Colección",
+        "año": "",
+        "portada": null,
+        "canciones": [
+          {"titulo": "Blanco y negro", "src": "BARRICADA/Balas Blancas CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "Animal caliente", "src": "BARRICADA/Barricada - Animal Caliente.mp3"},
+          {"titulo": "Deja que esto no acabe nunca", "src": "BARRICADA/Barricada - Deja Que Esto No Acabe Nunca.mp3"},
+          {"titulo": "Esta es una noche de Rock and Roll", "src": "BARRICADA/Barricada - Esta Es Una Noche De Rock Roll.mp3"},
+          {"titulo": "No hay tregua", "src": "BARRICADA/Barricada - No Hay Tregua.mp3"},
+          {"titulo": "Pétalos", "src": "BARRICADA/Barricada - Petalos.mp3"},
+          {"titulo": "Sean bienvenidos", "src": "BARRICADA/Barricada - Sean bienvenidos.mp3"},
+          {"titulo": "Todos mirando", "src": "BARRICADA/Barricada - Todos Mirando.mp3"},
+          {"titulo": "Por instinto", "src": "BARRICADA/Por Instinto CD 1 TRACK 7 (320).mp3"}
+        ]
+      }
+    ]
+  },
+  "AC/DC": {
+    "albums": [
+      {
+        "nombre": "Colección",
+        "año": "",
+        "portada": null,
+        "canciones": [
+          {"titulo": "You Shook Me All Night Long", "src": "AC-DC/AC_DC - You Shook Me All Night Long.mp3"},
+          {"titulo": "Back In Black", "src": "AC-DC/DC - Back In Black.mp3"},
+          {"titulo": "Highway to Hell", "src": "AC-DC/DC - Highway to Hell.mp3"},
+          {"titulo": "If You Want Blood (You've Got It)", "src": "AC-DC/DC - If You Want Blood (You ve Got It).mp3"},
+          {"titulo": "T.N.T", "src": "AC-DC/DC - T.N.T.mp3"},
+          {"titulo": "Thunderstruck", "src": "AC-DC/DC - Thunderstruck.mp3"},
+          {"titulo": "Touch Too Much", "src": "AC-DC/DC - Touch Too Much.mp3"}
+        ]
+      }
+    ]
+  }
 }
