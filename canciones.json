@@ -73,7 +73,7 @@
       {
         "nombre": "Colección",
         "año": "",
-        "portada": null,
+        "portada": "img/rosendo.jpg",
         "canciones": [
           {"titulo": "Otra noche sin dormir", "src": "ROSENDO/Otra noche sin dormir CD 1 TRACK 18 (320).mp3"},
           {"titulo": "Agradecido", "src": "ROSENDO/Rosendo - Agradecido.mp3"},
@@ -90,7 +90,7 @@
       {
         "nombre": "Colección",
         "año": "",
-        "portada": null,
+        "portada": "img/barricada.jpg",
         "canciones": [
           {"titulo": "En blanco y negro", "src": "BARRICADA/En_blanco_y_negro.mp3"},
           {"titulo": "Oveja negra", "src": "BARRICADA/oveja_negra.mp3"},
@@ -110,7 +110,7 @@
       {
         "nombre": "Colección",
         "año": "",
-        "portada": null,
+        "portada": "img/acdc.jpg",
         "canciones": [
           {"titulo": "You Shook Me All Night Long", "src": "AC-DC/AC_DC - You Shook Me All Night Long.mp3"},
           {"titulo": "Back In Black", "src": "AC-DC/DC - Back In Black.mp3"},
