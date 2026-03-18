@@ -92,15 +92,15 @@
         "año": "",
         "portada": null,
         "canciones": [
-          {"titulo": "Blanco y negro", "src": "BARRICADA/Balas Blancas CD 1 TRACK 2 (320).mp3"},
+          {"titulo": "En blanco y negro", "src": "BARRICADA/En_blanco_y_negro.mp3"},
+          {"titulo": "Oveja negra", "src": "BARRICADA/oveja_negra.mp3"},
           {"titulo": "Animal caliente", "src": "BARRICADA/Barricada - Animal Caliente.mp3"},
           {"titulo": "Deja que esto no acabe nunca", "src": "BARRICADA/Barricada - Deja Que Esto No Acabe Nunca.mp3"},
           {"titulo": "Esta es una noche de Rock and Roll", "src": "BARRICADA/Barricada - Esta Es Una Noche De Rock Roll.mp3"},
           {"titulo": "No hay tregua", "src": "BARRICADA/Barricada - No Hay Tregua.mp3"},
           {"titulo": "Pétalos", "src": "BARRICADA/Barricada - Petalos.mp3"},
           {"titulo": "Sean bienvenidos", "src": "BARRICADA/Barricada - Sean bienvenidos.mp3"},
-          {"titulo": "Todos mirando", "src": "BARRICADA/Barricada - Todos Mirando.mp3"},
-          {"titulo": "Por instinto", "src": "BARRICADA/Por Instinto CD 1 TRACK 7 (320).mp3"}
+          {"titulo": "Todos mirando", "src": "BARRICADA/Barricada - Todos Mirando.mp3"}
         ]
       }
     ]
