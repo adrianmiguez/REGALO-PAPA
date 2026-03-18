@@ -129,13 +129,12 @@ const bandConfig={
   "Barricada":{color:"#c084fc",bg:"#0d0618",origen:"Pamplona, 1982",tags:["Rock español","80s","90s"]},
   "AC/DC":{color:"#ffb300",bg:"#141000",origen:"Sydney, 1973",tags:["Hard rock","70s","80s"]},
 };
+
 const recs=[
-  {name:"Barón Rojo",genre:"Rock español",why:"Rock duro de los 80, misma onda que Los Suaves",tags:["80s","Madrid"],bg:"#1d0800",col:"#ff3d00"},
-  {name:"Obús",genre:"Hard rock español",why:"Hard rock español, misma época que Rosendo y Barricada",tags:["80s"],bg:"#051208",col:"#4caf70"},
-  {name:"Leño",genre:"Rock urbano",why:"Banda original de Rosendo antes de su carrera solista",tags:["70s","80s"],bg:"#141000",col:"#ffb300"},
-  {name:"Topo",genre:"Rock gallego",why:"Rock gallego como Los Suaves, misma escena de Vigo",tags:["80s","Galicia"],bg:"#0d0618",col:"#c084fc"},
-  {name:"Black Sabbath",genre:"Heavy metal",why:"Raíces del metal, padres de todo lo que escuchas",tags:["70s","Clásico"],bg:"#141000",col:"#ffb300"},
-  {name:"Aerosmith",genre:"Hard rock",why:"Hard rock americano de la misma era que AC/DC",tags:["70s","80s"],bg:"#1d0800",col:"#ff3d00"},
+  {name:"Skid Row",genre:"Hard rock / Heavy metal",why:"Slave to the Grind (1991) — uno de los mejores discos de hard rock de los 90",tags:["90s","Hard rock"],bg:"#1d0800",col:"#ff3d00"},
+  {name:"Mötley Crüe",genre:"Glam metal",why:"Dr. Feelgood (1989) — imprescindible del metal americano",tags:["80s","90s","Glam metal"],bg:"#141000",col:"#ffb300"},
+  {name:"Metallica",genre:"Heavy metal",why:"The Black Album (1991) — si no lo conoces ya, tienes que escucharlo entero",tags:["90s","Heavy metal"],bg:"#0c0c1c",col:"#7b9fe0"},
+  {name:"Guns N' Roses",genre:"Hard rock",why:"Appetite for Destruction (1987) — el mejor debut de la historia del rock",tags:["80s","Hard rock"],bg:"#1c0c08",col:"#e05c3a"},
 ];
 
 let audio=new Audio(),allSongs=[],currentIdx=-1,isPlaying=false;
@@ -157,7 +156,7 @@ function buildAllSongs(data){
 
 function buildUI(data){
   const bands=Object.keys(data);
-  const tabNames=['Inicio',...bands,'Para Ti'];
+  const tabNames=['Inicio',...bands,'Adrián'];
   document.getElementById('tabs').innerHTML=tabNames.map((t,i)=>
     `<button class="tab ${i===0?'active':''}" onclick="switchTab(${i})">${t}</button>`
   ).join('');
@@ -229,11 +228,18 @@ function buildUI(data){
   const paraIdx=bands.length+1;
   pages+=`<div class="page" id="page-${paraIdx}">
     <div class="hero">
-      <p class="hero-label">Basado en tus gustos</p>
+      <p class="hero-label">Recomendaciones de Adrián</p>
       <p class="hero-title">PARA<br>TI, <span>PAPÁ</span></p>
-      <p class="hero-sub">Bandas que te van a gustar</p>
+      <p class="hero-sub">Lo que no te puedes perder</p>
     </div>
-    <div style="margin-top:12px">
+    <div style="display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid var(--border);margin-bottom:8px">
+      <img src="img/adrian.jpg" style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid var(--acc);flex-shrink:0" onerror="this.style.display='none'">
+      <div>
+        <p style="font-family:'Anton',sans-serif;font-size:18px;letter-spacing:.04em">Adrián</p>
+        <p style="font-size:12px;color:var(--muted2);font-weight:300;margin-top:3px">Te lo recomiendo con todo mi corazón 🤘</p>
+      </div>
+    </div>
+    <div>
       ${recs.map(r=>`
         <div class="rec-card">
           <div class="rec-art" style="background:${r.bg}">
