@@ -283,6 +283,7 @@ function switchTab(i){
 
 function playSong(idx){
   if(idx<0||idx>=allSongs.length)return;
+  audio.pause();
   currentIdx=idx;
   const s=allSongs[idx];
   audio.src=encodeFilePath(s.src);
