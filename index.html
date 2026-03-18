@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Música Papá">
+  <title>Música Papá</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    :root{--bg:#0e0e0e;--s1:#181818;--s2:#222;--s3:#2a2a2a;--acc:#e8c547;--text:#f0ede6;--muted:#666;--muted2:#999}
+    html,body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;height:100%;overflow:hidden}
+    .app{display:flex;flex-direction:column;height:100vh;max-width:430px;margin:0 auto}
+
+    .tabs-wrap{background:var(--bg);padding:52px 0 0;border-bottom:1px solid var(--s3);flex-shrink:0}
+    .tabs{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 16px}
+    .tabs::-webkit-scrollbar{display:none}
+    .tab{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:var(--muted2);background:none;border:none;cursor:pointer;padding:10px 14px 13px;white-space:nowrap;position:relative;transition:color .2s}
+    .tab.active{color:var(--text)}
+    .tab.active::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:2px;background:var(--acc);border-radius:2px 2px 0 0}
+
+    .content{flex:1;overflow-y:auto;scrollbar-width:none}
+    .content::-webkit-scrollbar{display:none}
+    .page{display:none;padding-bottom:130px}
+    .page.active{display:block}
+
+    .hero{padding:22px 20px 0}
+    .hero-label{font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+    .hero-title{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:.03em;line-height:1}
+    .hero-sub{font-size:13px;color:var(--muted2);margin-top:5px}
+
+    .band-hero{margin:18px 20px 0;border-radius:18px;overflow:hidden;position:relative;height:170px;display:flex;align-items:flex-end}
+    .band-hero-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+    .band-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,transparent 65%)}
+    .band-hero-info{position:relative;padding:16px 18px}
+    .band-hero-name{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.03em}
+    .band-hero-meta{font-size:12px;color:rgba(255,255,255,.55);margin-top:3px}
+
+    .sec{padding:20px 20px 0}
+    .sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+    .sec-title{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.04em}
+
+    .hscroll{display:flex;gap:12px;overflow-x:auto;padding:4px 20px;scrollbar-width:none}
+    .hscroll::-webkit-scrollbar{display:none}
+    .album-card{flex-shrink:0;width:120px;cursor:pointer}
+    .album-art{width:120px;height:120px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:8px;overflow:hidden;position:relative}
+    .album-label{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:.05em;padding:0 4px}
+    .album-title{font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .album-artist{font-size:11px;color:var(--muted2);margin-top:2px}
+
+    .tracklist{padding:0 20px}
+    .track{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #1d1d1d;cursor:pointer;transition:opacity .15s}
+    .track:last-child{border:none}
+    .track:active{opacity:.5}
+    .track-n{font-size:12px;color:var(--muted);width:20px;text-align:center;flex-shrink:0}
+    .track-n.on{color:var(--acc)}
+    .track-thumb{width:40px;height:40px;border-radius:8px;background:var(--s2);flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .track-name{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .track-name.on{color:var(--acc)}
+    .track-sub{font-size:11px;color:var(--muted2);margin-top:2px}
+    .track-dur{font-size:11px;color:var(--muted);flex-shrink:0}
+
+    .eq{display:flex;align-items:flex-end;gap:2px;height:13px}
+    .eq span{display:block;width:2px;background:var(--acc);border-radius:1px;animation:eq .65s ease-in-out infinite alternate}
+    .eq span:nth-child(2){animation-delay:.15s}
+    .eq span:nth-child(3){animation-delay:.3s}
+    @keyframes eq{0%{height:2px}100%{height:13px}}
+
+    .tag{display:inline-block;font-size:10px;padding:3px 9px;border-radius:12px;margin:4px 4px 0 0;background:var(--s3);color:var(--muted2)}
+
+    .rec-card{margin:12px 20px 0;background:var(--s1);border-radius:14px;padding:14px 16px;border:1px solid var(--s3);display:flex;gap:14px}
+    .rec-art{width:56px;height:56px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .rec-title{font-size:14px;font-weight:500;margin-bottom:3px}
+    .rec-artist{font-size:12px;color:var(--muted2);margin-bottom:7px}
+    .rec-reason{font-size:11px;color:var(--acc);background:rgba(232,197,71,.1);padding:3px 9px;border-radius:6px;display:inline-block;line-height:1.5}
+
+    .miniplayer{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:rgba(18,18,18,.97);border-top:1px solid var(--s3);padding:10px 20px 30px;display:flex;align-items:center;gap:12px}
+    .mini-prog{position:absolute;top:0;left:0;height:2px;background:var(--acc);transition:width .4s linear}
+    .mini-art{width:42px;height:42px;border-radius:8px;background:var(--s2);flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .mini-info{flex:1;min-width:0}
+    .mini-title{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .mini-artist{font-size:11px;color:var(--muted2)}
+    .mini-btn{background:none;border:none;color:var(--text);cursor:pointer;padding:8px;display:flex;border-radius:50%;transition:opacity .15s}
+    .mini-btn:active{opacity:.5}
+    .play-big{width:50px;height:50px;background:var(--acc);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .1s}
+    .play-big:active{transform:scale(.92)}
+
+    .loading{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <div class="content" id="content">
+    <div class="loading">Cargando música...</div>
+  </div>
+
+  <div class="miniplayer" id="miniplayer" style="display:none">
+    <div class="mini-prog" id="mini-prog" style="width:0%"></div>
+    <div class="mini-art">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8c547" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+    </div>
+    <div class="mini-info">
+      <p class="mini-title" id="mini-title">—</p>
+      <p class="mini-artist" id="mini-artist">—</p>
+    </div>
+    <button class="mini-btn" onclick="skipTrack(-1)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="19 20 9 12 19 4"/><line x1="5" y1="19" x2="5" y2="5"/></svg>
+    </button>
+    <button class="play-big" onclick="togglePlay()">
+      <svg id="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="#111"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </button>
+    <button class="mini-btn" onclick="skipTrack(1)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 4 15 12 5 20"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+// ─── CONFIG DE BANDAS ────────────────────────────────────────────────────────
+const bandConfig = {
+  "Los Suaves":  { color: "#e05c3a", bg: "#1d1008", origen: "Vigo, 1983",       tags: ["Rock gallego","80s","90s"] },
+  "Rosendo":     { color: "#4caf70", bg: "#0a1a0c", origen: "Madrid, 1984",      tags: ["Rock urbano","80s"] },
+  "Barricada":   { color: "#c084fc", bg: "#160d1f", origen: "Pamplona, 1982",    tags: ["Rock español","80s","90s"] },
+  "AC/DC":       { color: "#e8c547", bg: "#1a1500", origen: "Sydney, 1973",      tags: ["Hard rock","70s","80s"] },
+};
+
+const recs = [
+  { name:"Barón Rojo",  genre:"Rock español",      why:"Rock duro de los 80, misma onda que Los Suaves",         tags:["80s","Madrid"],   bg:"#1d1008", col:"#e05c3a" },
+  { name:"Obús",        genre:"Hard rock español", why:"Hard rock español, misma época que Rosendo y Barricada", tags:["80s"],            bg:"#0a1a0c", col:"#4caf70" },
+  { name:"Leño",        genre:"Rock urbano",       why:"Banda original de Rosendo antes de su carrera solista",  tags:["70s","80s"],      bg:"#1a1500", col:"#e8c547" },
+  { name:"Topo",        genre:"Rock gallego",      why:"Rock gallego como Los Suaves, misma escena de Vigo",     tags:["80s","Galicia"],  bg:"#160d1f", col:"#c084fc" },
+  { name:"Black Sabbath",genre:"Heavy metal",      why:"Raíces del metal, padres de todo lo que escuchas",       tags:["70s","Clásico"],  bg:"#1a1500", col:"#e8c547" },
+  { name:"Aerosmith",   genre:"Hard rock",         why:"Hard rock americano de la misma era que AC/DC",          tags:["70s","80s"],      bg:"#1d1008", col:"#e05c3a" },
+];
+
+// ─── ESTADO DEL PLAYER ───────────────────────────────────────────────────────
+let audio = new Audio();
+let allSongs = [];       // lista plana {titulo, banda, id}
+let currentIdx = -1;
+let isPlaying = false;
+let currentBand = '';
+
+function driveUrl(id) {
+  return `https://drive.google.com/uc?export=download&id=${id}`;
+}
+
+// ─── CARGAR JSON ─────────────────────────────────────────────────────────────
+fetch('canciones.json')
+  .then(r => r.json())
+  .then(data => {
+    buildAllSongs(data);
+    buildUI(data);
+  })
+  .catch(() => {
+    document.getElementById('content').innerHTML = '<div class="loading">Error cargando canciones. Asegúrate de que canciones.json está en el mismo directorio.</div>';
+  });
+
+function buildAllSongs(data) {
+  allSongs = [];
+  Object.entries(data).forEach(([banda, songs]) => {
+    songs.forEach(s => allSongs.push({ titulo: s.titulo, banda, id: s.id }));
+  });
+}
+
+function buildUI(data) {
+  const bands = Object.keys(data);
+  const tabsEl = document.getElementById('tabs');
+  const contentEl = document.getElementById('content');
+
+  // Tabs
+  const tabNames = ['Inicio', ...bands, 'Para Ti'];
+  tabsEl.innerHTML = tabNames.map((t, i) =>
+    `<button class="tab ${i===0?'active':''}" onclick="switchTab(${i})">${t}</button>`
+  ).join('');
+
+  // Pages
+  let pages = '';
+
+  // INICIO
+  pages += `<div class="page active" id="page-0">
+    <div class="hero">
+      <p class="hero-label">Feliz Día del Padre</p>
+      <p class="hero-title">Tu Música, Papá</p>
+      <p class="hero-sub">Rock español y clásico · Todo en un lugar</p>
+    </div>
+    <div class="sec" style="margin-top:8px"><div class="sec-head"><span class="sec-title">Tus Bandas</span></div></div>
+    <div class="hscroll">
+      ${bands.map((b,i) => {
+        const cfg = bandConfig[b] || { color:'#e8c547', bg:'#1a1500' };
+        return `<div class="album-card" onclick="switchTab(${i+1})">
+          <div class="album-art" style="background:${cfg.bg}">
+            ${bandSvg(b, cfg.color)}
+            <span class="album-label" style="color:${cfg.color}">${b.toUpperCase()}</span>
+          </div>
+          <p class="album-title">${b}</p>
+          <p class="album-artist">${(bandConfig[b]||{}).tags?.[0]||'Rock'}</p>
+        </div>`;
+      }).join('')}
+    </div>
+    <div class="sec" style="margin-top:16px"><div class="sec-head"><span class="sec-title">Reproducir Ahora</span></div></div>
+    <div class="tracklist">
+      ${allSongs.slice(0,8).map((s,i) => {
+        const cfg = bandConfig[s.banda] || { color:'#e8c547' };
+        return trackHTML(s, i, 'inicio');
+      }).join('')}
+    </div>
+  </div>`;
+
+  // BAND PAGES
+  bands.forEach((banda, bi) => {
+    const cfg = bandConfig[banda] || { color:'#e8c547', bg:'#1a1500', origen:'', tags:[] };
+    const songs = data[banda];
+    const pageIdx = bi + 1;
+    pages += `<div class="page" id="page-${pageIdx}">
+      <div class="band-hero" style="background:${cfg.bg}">
+        <div class="band-hero-bg">${bandSvgLarge(banda, cfg.color)}</div>
+        <div class="band-hero-overlay"></div>
+        <div class="band-hero-info">
+          <p class="band-hero-name">${banda}</p>
+          <p class="band-hero-meta">${cfg.origen} · ${songs.length} canciones</p>
+        </div>
+      </div>
+      <div style="padding:12px 20px 0">${(cfg.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      <div class="sec"><div class="sec-head"><span class="sec-title">Canciones</span></div></div>
+      <div class="tracklist">
+        ${songs.map((s,i) => trackHTML({...s, banda}, i, banda)).join('')}
+      </div>
+    </div>`;
+  });
+
+  // PARA TI
+  const paraIdx = bands.length + 1;
+  pages += `<div class="page" id="page-${paraIdx}">
+    <div class="hero">
+      <p class="hero-label">Basado en tus gustos</p>
+      <p class="hero-title">Para Ti, Papá</p>
+      <p class="hero-sub">Bandas que te van a gustar</p>
+    </div>
+    <div style="margin-top:8px">
+      ${recs.map(r => `
+        <div class="rec-card">
+          <div class="rec-art" style="background:${r.bg}">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${r.col}" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/></svg>
+          </div>
+          <div style="flex:1;min-width:0">
+            <p class="rec-title">${r.name}</p>
+            <p class="rec-artist">${r.genre}</p>
+            <span class="rec-reason">${r.why}</span>
+            <div>${r.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+          </div>
+        </div>`).join('')}
+    </div>
+  </div>`;
+
+  contentEl.innerHTML = pages;
+}
+
+function trackHTML(s, i, scope) {
+  const cfg = bandConfig[s.banda] || { color: '#e8c547' };
+  const globalIdx = allSongs.findIndex(x => x.id === s.id);
+  return `<div class="track" onclick="playSong(${globalIdx})">
+    <span class="track-n" id="tn-${s.id}">${i+1}</span>
+    <div class="track-thumb">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="${cfg.color}" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
+    </div>
+    <div style="flex:1;min-width:0">
+      <p class="track-name" id="tname-${s.id}">${s.titulo}</p>
+      <p class="track-sub">${s.banda}</p>
+    </div>
+  </div>`;
+}
+
+function bandSvg(banda, color) {
+  const svgs = {
+    "Los Suaves": `<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="20" stroke="${color}" stroke-width=".7" opacity=".35"/><path d="M5 25 Q25 5 45 25 Q25 45 5 25Z" stroke="${color}" stroke-width=".7" opacity=".4"/><circle cx="25" cy="25" r="5" stroke="${color}" stroke-width=".7" opacity=".5"/></svg>`,
+    "Rosendo":    `<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><line x1="25" y1="5" x2="25" y2="45" stroke="${color}" stroke-width=".7" opacity=".4"/><path d="M10 15 Q25 10 40 15 M10 25 Q25 20 40 25 M10 35 Q25 30 40 35" stroke="${color}" stroke-width=".7" opacity=".4"/></svg>`,
+    "Barricada":  `<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><rect x="8" y="8" width="34" height="34" rx="2" stroke="${color}" stroke-width=".7" opacity=".35"/><rect x="16" y="16" width="18" height="18" rx="2" stroke="${color}" stroke-width=".7" opacity=".4"/><line x1="8" y1="25" x2="42" y2="25" stroke="${color}" stroke-width=".7" opacity=".3"/></svg>`,
+    "AC/DC":      `<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><path d="M5 25 L15 8 L22 25 L28 10 L35 25 L42 15 L48 25" stroke="${color}" stroke-width="1.2" opacity=".5"/></svg>`,
+  };
+  return svgs[banda] || `<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="18" stroke="${color}" stroke-width=".7" opacity=".4"/></svg>`;
+}
+
+function bandSvgLarge(banda, color) {
+  return `<svg width="300" height="300" viewBox="0 0 300 300" fill="none" style="opacity:.1">${
+    banda === "Los Suaves"  ? `<circle cx="150" cy="150" r="120" stroke="${color}" stroke-width="1"/><path d="M30 150 Q150 30 270 150 Q150 270 30 150Z" stroke="${color}" stroke-width="1"/><circle cx="150" cy="150" r="40" stroke="${color}" stroke-width="1"/>` :
+    banda === "Rosendo"     ? `<line x1="150" y1="20" x2="150" y2="280" stroke="${color}" stroke-width="1"/><path d="M50 90 Q150 60 250 90 M50 150 Q150 120 250 150 M50 210 Q150 180 250 210" stroke="${color}" stroke-width="1"/>` :
+    banda === "Barricada"   ? `<rect x="40" y="40" width="220" height="220" rx="4" stroke="${color}" stroke-width="1"/><rect x="80" y="80" width="140" height="140" rx="4" stroke="${color}" stroke-width="1"/><line x1="40" y1="150" x2="260" y2="150" stroke="${color}" stroke-width="1"/>` :
+    banda === "AC/DC"       ? `<path d="M20 150 L60 40 L90 150 L130 50 L170 150 L210 80 L260 150" stroke="${color}" stroke-width="1.5"/>` :
+    `<circle cx="150" cy="150" r="100" stroke="${color}" stroke-width="1"/>`
+  }</svg>`;
+}
+
+// ─── NAVEGACIÓN ──────────────────────────────────────────────────────────────
+function switchTab(i) {
+  document.querySelectorAll('.tab').forEach((t,j) => t.classList.toggle('active', i===j));
+  document.querySelectorAll('.page').forEach((p,j) => p.classList.toggle('active', i===j));
+  document.querySelector('.content').scrollTop = 0;
+}
+
+// ─── PLAYER ──────────────────────────────────────────────────────────────────
+function playSong(idx) {
+  if (idx < 0 || idx >= allSongs.length) return;
+  currentIdx = idx;
+  const s = allSongs[idx];
+  audio.src = driveUrl(s.id);
+  audio.play().catch(() => {});
+  isPlaying = true;
+  document.getElementById('mini-title').textContent = s.titulo;
+  document.getElementById('mini-artist').textContent = s.banda;
+  document.getElementById('miniplayer').style.display = 'flex';
+  updateIcon();
+  updateActiveTrack();
+}
+
+function togglePlay() {
+  if (currentIdx < 0) { playSong(0); return; }
+  if (isPlaying) { audio.pause(); isPlaying = false; }
+  else { audio.play().catch(()=>{}); isPlaying = true; }
+  updateIcon();
+}
+
+function skipTrack(dir) {
+  playSong((currentIdx + dir + allSongs.length) % allSongs.length);
+}
+
+audio.addEventListener('ended', () => skipTrack(1));
+
+audio.addEventListener('timeupdate', () => {
+  if (!audio.duration) return;
+  const pct = (audio.currentTime / audio.duration) * 100;
+  document.getElementById('mini-prog').style.width = pct + '%';
+});
+
+function updateIcon() {
+  const ic = document.getElementById('play-icon');
+  ic.innerHTML = isPlaying
+    ? '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>'
+    : '<polygon points="5 3 19 12 5 21 5 3"/>';
+  ic.setAttribute('fill','#111');
+}
+
+function updateActiveTrack() {
+  document.querySelectorAll('.track-n').forEach(el => el.classList.remove('on'));
+  document.querySelectorAll('.track-name').forEach(el => el.classList.remove('on'));
+  if (currentIdx < 0) return;
+  const s = allSongs[currentIdx];
+  const tn = document.getElementById(`tn-${s.id}`);
+  const tname = document.getElementById(`tname-${s.id}`);
+  if (tn) { tn.innerHTML = '<div class="eq"><span></span><span></span><span></span></div>'; tn.classList.add('on'); }
+  if (tname) tname.classList.add('on');
+}
+</script>
+</body>
+</html>
