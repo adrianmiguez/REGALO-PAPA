@@ -6,14 +6,15 @@
         "año": "1989",
         "portada": "img/Ese_dia_piensa_en_mi.jpg",
         "canciones": [
-          {"titulo": "Ese día piensa en mí", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 1 (320).mp3"},
-          {"titulo": "Buen suceso", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 2 (320).mp3"},
-          {"titulo": "Río y no sé por qué", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 3 (320).mp3"},
-          {"titulo": "Camino de una dirección", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 4 (320).mp3"},
-          {"titulo": "Solo pienso en dormir", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 5 (320).mp3"},
-          {"titulo": "Nena, te voy a dejar", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 6 (320).mp3"},
-          {"titulo": "No puedo dejar el Rock", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Ese d\u00eda piensa en m\u00ed CD 1 TRACK 7 (320).mp3"},
-          {"titulo": "Diez años de Rock (bonus)", "src": "LOS SUAVES/Ese d\u00eda piensa en m\u00ed/Diez A\u00f1os de Rock CD 1 TRACK 2 (320).mp3"}
+          {"titulo": "Ese día piensa en mí", "src": "LOS SUAVES/Ese día piensa en mi/ese_dia_piensa_en_mi.mp3"},
+          {"titulo": "Buen suceso", "src": "LOS SUAVES/Ese día piensa en mi/buen_suceso.mp3"},
+          {"titulo": "Río y no sé por qué", "src": "LOS SUAVES/Ese día piensa en mi/rio_y_no_se_por_que.mp3"},
+          {"titulo": "Camino de una dirección", "src": "LOS SUAVES/Ese día piensa en mi/camino_de_una_direccion.mp3"},
+          {"titulo": "Solo pienso en dormir", "src": "LOS SUAVES/Ese día piensa en mi/solo_pienso_en_dormir.mp3"},
+          {"titulo": "Nena, te voy a dejar", "src": "LOS SUAVES/Ese día piensa en mi/nena_te_voy_a_dejar.mp3"},
+          {"titulo": "No puedo dejar el Rock", "src": "LOS SUAVES/Ese día piensa en mi/no_puedo_dejar_el_rock.mp3"},
+          {"titulo": "Sabes? ¡Phil Lynott, murió!", "src": "LOS SUAVES/Ese día piensa en mi/sabes_phil_lynott_murio.mp3"},
+          {"titulo": "Dolores se llamaba Lola", "src": "LOS SUAVES/Ese día piensa en mi/dolores_se_llama_lola.mp3"}
         ]
       },
       {
@@ -21,16 +22,16 @@
         "año": "1991",
         "portada": "img/Maldita_sea_mi_suerte.jpg",
         "canciones": [
-          {"titulo": "Maldita sea mi suerte", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 1 (320).mp3"},
-          {"titulo": "Pobre Sara", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 2 (320).mp3"},
-          {"titulo": "Viajando al fin de la noche", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 3 (320).mp3"},
-          {"titulo": "Pardao", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 4 (320).mp3"},
-          {"titulo": "Parece que aún fue ayer", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 5 (320).mp3"},
-          {"titulo": "Dame Rock and Roll", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 6 (320).mp3"},
-          {"titulo": "Pensando en ti", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 8 (320).mp3"},
-          {"titulo": "Tiempo perdido", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 9 (320).mp3"},
-          {"titulo": "Tiempo perdido (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 10 (320).mp3"},
-          {"titulo": "Parece que aún fue ayer (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/Maldita sea mi suerte CD 1 TRACK 11 (320).mp3"}
+          {"titulo": "Maldita sea mi suerte", "src": "LOS SUAVES/Maldita sea mi suerte/maldita_sea_mi_suerte.mp3"},
+          {"titulo": "Pobre Sara", "src": "LOS SUAVES/Maldita sea mi suerte/pobre_sara.mp3"},
+          {"titulo": "Viajando al fin de la noche", "src": "LOS SUAVES/Maldita sea mi suerte/viajando_al_fin_de_la_noche.mp3"},
+          {"titulo": "Pardao", "src": "LOS SUAVES/Maldita sea mi suerte/pardao_(reedición_1991).mp3"},
+          {"titulo": "Parece que aún fue ayer", "src": "LOS SUAVES/Maldita sea mi suerte/parece_que_aun_fue_ayer.mp3"},
+          {"titulo": "Parece que aún fue ayer (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/parece_que_aún_fue_ayer_(versión_acústica).mp3"},
+          {"titulo": "Dame Rock and Roll", "src": "LOS SUAVES/Maldita sea mi suerte/dame_rock_and_roll.mp3"},
+          {"titulo": "Pensando en ti", "src": "LOS SUAVES/Maldita sea mi suerte/pensando_en_ti.mp3"},
+          {"titulo": "Tiempo perdido", "src": "LOS SUAVES/Maldita sea mi suerte/tiempo_perdido.mp3"},
+          {"titulo": "Tiempo perdido (Versión Acústica)", "src": "LOS SUAVES/Maldita sea mi suerte/tiempo_perdido_(versión_acustica).mp3"}
         ]
       },
       {
@@ -38,15 +39,15 @@
         "año": "1996",
         "portada": "img/Santa_compania.jpg",
         "canciones": [
-          {"titulo": "Sabes? ¡Phil Lynott, murió!", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 1 (320).mp3"},
-          {"titulo": "Dolores se llamaba Lola", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 2 (320).mp3"},
-          {"titulo": "El Afilador", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 3 (320).mp3"},
-          {"titulo": "Ahora Que Me Dejas", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 4 (320).mp3"},
-          {"titulo": "Hendrix", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 5 (320).mp3"},
-          {"titulo": "No Me Mires", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 6 (320).mp3"},
-          {"titulo": "Dulce Castigo", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 7 (320).mp3"},
-          {"titulo": "Pobre Jugador!", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 8 (320).mp3"},
-          {"titulo": "Otra Noche, Otra Ciudad", "src": "LOS SUAVES/Santa compa\u00f1a/Santa Compa\u00f1a CD 1 TRACK 9 (320).mp3"}
+          {"titulo": "Ahora que me dejas", "src": "LOS SUAVES/Santa compaña/ahora_que_me_dejas.mp3"},
+          {"titulo": "Dulce Castigo", "src": "LOS SUAVES/Santa compaña/dulce_castigo.mp3"},
+          {"titulo": "El Afilador", "src": "LOS SUAVES/Santa compaña/el_afilador.mp3"},
+          {"titulo": "Hendrix", "src": "LOS SUAVES/Santa compaña/hendrix.mp3"},
+          {"titulo": "No me mires", "src": "LOS SUAVES/Santa compaña/no_me_mires.mp3"},
+          {"titulo": "Otra noche, otra ciudad", "src": "LOS SUAVES/Santa compaña/otre_noche,_otra_ciudad.mp3"},
+          {"titulo": "Pobre Jugador!", "src": "LOS SUAVES/Santa compaña/pobre_jugador!.mp3"},
+          {"titulo": "Santa Compaña", "src": "LOS SUAVES/Santa compaña/santa_compana.mp3"},
+          {"titulo": "Si pudiera", "src": "LOS SUAVES/Santa compaña/si_pudiera.mp3"}
         ]
       },
       {
@@ -54,15 +55,15 @@
         "año": "2000",
         "portada": "img/los-suaves-vispera-de-todos-los-santos.jpg",
         "canciones": [
-          {"titulo": "Víspera De Todos Los Santos", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 1 (320).mp3"},
-          {"titulo": "Harto De Ser Hombre", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 2 (320).mp3"},
-          {"titulo": "Palabras Para Julia", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 3 (320).mp3"},
-          {"titulo": "No Me Gusta El Rock And Roll", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 4 (320).mp3"},
-          {"titulo": "Chou-Chou Llega El Tren", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 5 (320).mp3"},
-          {"titulo": "Dulces Noches De Luna Y Pateras", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 6 (320).mp3"},
-          {"titulo": "La Peor Canción Del Mundo", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 7 (320).mp3"},
-          {"titulo": "Siempre Con Miedo", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 8 (320).mp3"},
-          {"titulo": "Miénteme", "src": "LOS SUAVES/Vispera de todos los santos/Vispera De Todos Los Santos CD 1 TRACK 9 (320).mp3"}
+          {"titulo": "Víspera de Todos los Santos", "src": "LOS SUAVES/Vispera de todos los santos/vispera_de_todos_los_santos.mp3"},
+          {"titulo": "Harto de ser hombre", "src": "LOS SUAVES/Vispera de todos los santos/harto_de_ser_hombre.mp3"},
+          {"titulo": "Palabras para Julia", "src": "LOS SUAVES/Vispera de todos los santos/palabras_para_julia.mp3"},
+          {"titulo": "No me gusta el Rock and Roll", "src": "LOS SUAVES/Vispera de todos los santos/no_me_gusta_el_rock_and_roll.mp3"},
+          {"titulo": "Chou-Chou llega el tren", "src": "LOS SUAVES/Vispera de todos los santos/chou_chou_llega_el_tren.mp3"},
+          {"titulo": "Dulces noches de luna y pateras", "src": "LOS SUAVES/Vispera de todos los santos/dulces_noches_de_luna_y_pateras.mp3"},
+          {"titulo": "La peor canción del mundo", "src": "LOS SUAVES/Vispera de todos los santos/la_peor_cancion_del_mundo.mp3"},
+          {"titulo": "Siempre con miedo", "src": "LOS SUAVES/Vispera de todos los santos/siempre_con_miedo.mp3"},
+          {"titulo": "Miénteme", "src": "LOS SUAVES/Vispera de todos los santos/mienteme.mp3"}
         ]
       }
     ]
@@ -76,7 +77,7 @@
         "canciones": [
           {"titulo": "Otra noche sin dormir", "src": "ROSENDO/Otra noche sin dormir CD 1 TRACK 18 (320).mp3"},
           {"titulo": "Agradecido", "src": "ROSENDO/Rosendo - Agradecido.mp3"},
-          {"titulo": "Flojos de pantalón", "src": "ROSENDO/Rosendo - Flojos de pantal\u00f3n.mp3"},
+          {"titulo": "Flojos de pantalón", "src": "ROSENDO/Rosendo - Flojos de pantalón.mp3"},
           {"titulo": "Loco por incordiar", "src": "ROSENDO/Rosendo - Loco por Incordiar.mp3"},
           {"titulo": "Masculino singular", "src": "ROSENDO/Rosendo - Masculino singular.mp3"},
           {"titulo": "Pan de Higo", "src": "ROSENDO/Rosendo - Pan de Higo.mp3"}
